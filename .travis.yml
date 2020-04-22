@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode11.4
+xcode_workspace: DemoTravis.xcworkspace
+xcode_scheme: DemoTravis
+xcode_destination: platform=iOS Simulator,OS=13.0,name=iPhone X
+before_install:
+  - bundle install
+  - bundle exec pod install --repo-update
